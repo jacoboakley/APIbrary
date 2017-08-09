@@ -64,11 +64,6 @@ const styles = {
     flexWrap: 'wrap',
     justifyContent: 'center',
   },
-
-  links: {
-    height: '25vh',
-    width: '50vw',
-  }
 }
 
 class App extends Component {
@@ -87,13 +82,13 @@ class App extends Component {
           </div>
         </div>
         <div style={styles.jumbotron}>
-          <h1>APIbrary</h1>
+          <h1 style={{margin: 0, padding: 0}}>APIbrary</h1>
         </div>
         <div style={styles.pages}>
-          <a style={styles.links}>Browse</a>
-          <a style={styles.links}>About</a>
-          <a style={styles.links}>Sign Up</a>
-          <a style={styles.links}>Check This OUt</a>
+          <a style={{height: '25vh', width: '50vw', textAlign: 'center', background: 'blue'}}><span>Browse</span></a>
+          <a style={{height: '25vh', width: '50vw', textAlign: 'center', background: 'green'}}><span>About</span></a>
+          <a style={{height: '25vh', width: '50vw', textAlign: 'center', background: 'orange'}}><span>Sign Up</span></a>
+          <a style={{height: '25vh', width: '50vw', textAlign: 'center', background: 'purple'}}><span>Check This OUt</span></a>
         </div>
       </div>
     );
